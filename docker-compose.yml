@@ -1,6 +1,6 @@
 services:
   agent:
-    image: hnquangit/redteam-agent:latest
+    image: hnquangit/redteam-attack-engine:latest
     container_name: cyberrange-dast-agent
     env_file:
       - .env
