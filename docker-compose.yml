@@ -22,9 +22,6 @@ services:
       - ${HOST_HEADER:-vulnerable.cyberrange.local}
       - --attack-profile
       - ${ATTACK_PROFILE:-stealth}
-    depends_on:
-      qdrant:
-        condition: service_started
     restart: unless-stopped
 
 volumes:
