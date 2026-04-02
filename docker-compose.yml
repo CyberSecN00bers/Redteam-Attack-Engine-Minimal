@@ -22,6 +22,8 @@ services:
       - ${HOST_HEADER:-vulnerable.cyberrange.local}
       - --attack-profile
       - ${ATTACK_PROFILE:-stealth}
+      - --client-ip
+      - ${LAB_CLIENT_IP:-104.38.105.84}
     restart: unless-stopped
 
 volumes:
